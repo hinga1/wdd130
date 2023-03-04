@@ -22,6 +22,7 @@ nav a{
 
 .button-box{
     text-align: center;
+    margin-top: 10px;
 }
 
 main section{
@@ -234,6 +235,95 @@ nav {
 .card-img:hover {
     opacity: .6;
     transform: scale(1.1);
+}
+
+.river-title{
+    text-align: center;
+    color: royalblue;
+    font-size: 2em;
+    font-family: var(--headline-font)
+}
+
+#river {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+#river-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+}
+
+#river-msg {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+#river-img{
+    width: 100%;
+}
+
+#river-msg h1 {
+    text-align: center;
+}
+
+.rivers-grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.cards-img {
+    border: 10px solid black;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+    width: 100%;
+
+}
+
+.cards-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+
+.river-card {
+    grid-column: 2/5;
+    grid-row: 2/3;
+    margin: auto;
+}
+
+.paragraph-card {
+    background-color: palevioletred;
+    grid-column: 6/10;
+    grid-row: 2/3;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+}
+
+.river2-card {
+    grid-column: 6/10;
+    grid-row: 3/5;
+    margin: auto;
+}
+
+.paragraph2-card {
+    background-color: peachpuff;
+    grid-column: 2/5;
+    grid-row: 3/5;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+}
+
+.msg1 {
+    background-color: rgba(20,30,13, .7);
+    line-height: 1.5em;
+    padding: 35px;
+    grid-column: 2/10;
+    grid-row: 7/11;
+    box-shadow: 5px 5px 10px #6f7364;
+    margin-top: 100px;
+    border-radius: 10px;
 }
 
 @media screen and (max-width: 900px) {
