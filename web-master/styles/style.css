@@ -29,6 +29,7 @@
 }
 
 body {
+    background-color: var(--primary-color);
     max-width: 1200px;
     margin: 0 auto;
     padding: 4em;
@@ -37,11 +38,9 @@ body {
     font-family: var(--body-font);
 }
 
-nav a{
-    text-align: center;
-    color: grey;
-    text-decoration: none;
-    padding: 35px;
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
 }
 
 header{
@@ -51,10 +50,12 @@ header{
 }
 
 nav a{
+    font-family: var(--heading-font);
     text-align: center;
     color: black;
     text-decoration: none;
     padding: 35px;
+    margin-left: 30px;
 }
 
 nav {
@@ -69,6 +70,7 @@ nav {
     border-radius: 20%;
     margin-left: 10px;
     margin-top: 10px;
+    box-sizing: border-box;
 }
 
 #web {
@@ -79,6 +81,7 @@ nav {
 #web-box {
     grid-column: 1/4;
     grid-row: 1/3;
+    margin-top: 20px;
 }
 
 #web-img{
@@ -106,8 +109,14 @@ nav {
     margin-top: 30px;
 }
 
+.cards-img:hover{
+    opacity: .6;
+    transform: scale(1.1);
+}
+
 .paragraph-card {
-    background-color: darkolivegreen;
+    background-color: #C49799;
+    font-family: var(--paragraph-font);
     grid-column: 4/6;
     grid-row: 1/4;
     margin: auto;
@@ -119,6 +128,7 @@ nav {
 }
 
 .center {
+    color: var(--secondary-color);
     display: flex;
     justify-content: center;
     margin-top: 60px;
@@ -129,6 +139,26 @@ nav {
     grid-row: 4/6;
     margin: auto;
     margin-top: 50px;
+}
+
+.book{
+    font-family: var(--heading-font);
+    transition: transform .5s;
+}
+
+.link {
+    font-family: var(--heading-font);
+    transition: transform .5s;
+}
+
+.book:hover{
+    opacity: .6;
+    transform: scale(1.1);
+}
+
+.link:hover{
+    opacity: .6;
+    transform: scale(1.1);
 }
 
 footer {
