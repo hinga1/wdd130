@@ -166,6 +166,31 @@ nav {
     transform: scale(1.1);
 }
 
+.button {
+    padding: 15px 75px;
+    padding-left: 25px;
+    font-family: var(--heading-font);
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: black;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+        
+.button:hover {
+    background-color: var(--nav-hover-background-color);
+}
+  
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
 footer {
     padding: 25px 50px;
     margin-top: 200px;
