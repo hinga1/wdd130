@@ -240,24 +240,49 @@ footer p a:hover {
 }
 
 .cards1-img {
+    border: 10px solid var(--accent1-color);
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
     width: 300px;
     height: 300px;
     margin-left: 20px;
 }
 
 .cards2-img {
+    border: 10px solid var(--accent1-color);
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
     width: 300px;
     height: 300px;
     margin-left: 120px;
 }
 
 .cards3-img {
+    border: 10px solid var(--accent1-color);
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
     width: 300px;
     height: 300px;
     margin-left: 120px;
 }
 
-.paragraph2-card {
+.cards1-img:hover{
+    opacity: .6;
+    transform: scale(1.1);
+}
+
+.cards2-img:hover{
+    opacity: .6;
+    transform: scale(1.1);
+}
+
+.cards3-img:hover{
+    opacity: .6;
+    transform: scale(1.1);
+}
+
+.paragraph2-card { 
+    font-family: var(--paragraph-font);
     grid-column: 1/5;
     grid-row: 4/6;
     margin: auto;
